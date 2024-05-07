@@ -19,9 +19,11 @@ export default class Contador extends Component{
         <span className='Valor'>{this.state.valor}</span>
         <div className='Botonera'>
           <Boton
+          simbolo='-'
           accion={() => this.restar()}
           />
           <Boton
+          simbolo='+'
           accion={() => this.sumar()}
           />
         </div>
