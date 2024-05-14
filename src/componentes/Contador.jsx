@@ -7,10 +7,10 @@ export default class Contador extends Component{
   }
 
   restar(){
-    this.serState({valor: this.state.valor - 1})
+    this.setState({valor: this.state.valor - 1})
   }
   sumar(){
-    this.serState({valor: this.state.valor + 1})
+    this.setState({valor: this.state.valor + 1})
   }
   render(){
     return(
@@ -25,6 +25,10 @@ export default class Contador extends Component{
           <Boton
           simbolo='+'
           accion={() => this.sumar()}
+          />
+          <Boton
+          simbolo= 'x'
+          accion={() => this.props.eliminar()}
           />
         </div>
 
